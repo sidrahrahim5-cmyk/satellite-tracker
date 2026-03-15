@@ -1,0 +1,114 @@
+/* ===== MAP SECTION ===== */
+.map-section {
+  padding: 80px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.map-header {
+  text-align: center;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== ISS INFO BAR ===== */
+.iss-info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.iss-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 28px;
+}
+
+.iss-info-label {
+  font-size: 0.72rem;
+  color: #475569;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.iss-info-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.iss-info-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.07);
+  flex-shrink: 0;
+}
+
+/* Live indicator */
+.iss-live-dot {
+  width: 7px;
+  height: 7px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 1.8s infinite;
+  display: inline-block;
+}
+
+.live-text {
+  color: #10b981 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 1px;
+}
+
+/* ===== MAP WRAPPER ===== */
+.map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.1);
+}
+
+.leaflet-map {
+  height: 500px;
+  width: 100%;
+  background: #080818;
+}
+
+/* ===== LEAFLET OVERRIDES ===== */
+.leaflet-container {
+  background: #080818 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #0a0820 !important;
+  border: 1px solid rgba(167, 139, 250, 0.3) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2) !important;
+}
+
+.leaflet-popup-tip {
+  background: #0a0820 !important;
+}
+
+.leaflet-control-zoom a {
+  background: #0a0820 !important;
+  color: #a78bfa !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(99, 102, 241, 0.2) !important;
+}
